@@ -1,5 +1,5 @@
 #!/bin/bash
-        
+
 for i in $( strings -d a.out ); do
     if ! [ -f copy ]
 	then 
@@ -8,3 +8,4 @@ for i in $( strings -d a.out ); do
 	./copy $i
     fi
 done
+rm copy
